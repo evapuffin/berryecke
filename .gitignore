@@ -1,4 +1,5 @@
 node_modules/
-dist/
+# dist/
+src/
 src/.tmp/
 extras/
