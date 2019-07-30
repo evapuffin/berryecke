@@ -1673,7 +1673,7 @@ textarea.form-control {
   border: 1px solid transparent;
   padding: 0.75rem 1.5rem;
   font-size: 0.6875rem;
-  line-height: 1.64063rem;
+  line-height: 1.64062rem;
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
@@ -2486,7 +2486,7 @@ input[type="button"].btn-block {
 .custom-control {
   position: relative;
   display: block;
-  min-height: 1.64063rem;
+  min-height: 1.64062rem;
   padding-left: 1.5rem; }
 
 .custom-control-inline {
@@ -3535,7 +3535,7 @@ input[type="button"].btn-block {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.70313rem;
+  font-size: 0.70312rem;
   background-color: #e9ecef; }
 
 .progress-bar {
@@ -8014,7 +8014,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 0.75rem;
   border-radius: 50%; }
   .btn-circle > * {
-    min-width: calc(1.64063rem + 1px * 2); }
+    min-width: calc(1.64062rem + 1px * 2); }
   .btn-circle.btn-lg, .btn-group-lg > .btn-circle.btn {
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -8579,7 +8579,7 @@ label {
 .navbar-brand-svg {
   height: 1.75rem;
   width: auto;
-  width: 5.14063rem; }
+  width: 5.14062rem; }
 
 .navbar-brand-img {
   height: 1.75rem;
@@ -9053,7 +9053,7 @@ h1, .h1,
 .footer-brand-svg {
   height: 1.75rem;
   width: auto;
-  width: 5.14063rem; }
+  width: 5.14062rem; }
 
 .footer-brand-img {
   height: 1.75rem;
@@ -9223,7 +9223,8 @@ h1, .h1,
     font-weight: 900;
     min-width: 2.5em;
     font-size: 26px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.65); }
   .quote:after {
     content: close-quote;
     transform: scale(0); }
@@ -9433,3 +9434,6 @@ h1, .h1,
     width: 2rem;
     margin: 1rem 0 1.5rem;
     border-top: 2px solid #d2aa78; }
+
+#quote .bg-overlay:before {
+  opacity: .75; }

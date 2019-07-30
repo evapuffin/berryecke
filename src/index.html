@@ -1,83 +1,445 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    @@include("partials/head.html", {
-      "css": "theme",
-      "title": "Incline | Welcome"
-    })
-  </head>
-  <body>
 
-    <!-- NAVBAR
+<head>
+	@@include("partials/head.html", {
+	"css": "theme",
+	"title": "Berry Ecke Associates | Home"
+	})
+</head>
+
+<body>
+
+	<!-- NAVBAR
     ================================================= -->
-    @@include("partials/navbar.html", {
-      "togglable": true,
-      "type": "dark",
-      "page": "index.html",
-      "button": {
-        "url": "https://themes.getbootstrap.com/product/incline-landing-page-set/",
-        "text": "Purchase now"
-      }
-    })
+	@@include("partials/navbar.html", {
+	"togglable": true,
+	"type": "dark",
+	"page": "index-header-parallax.html",
+	"button": {
+	"url": "https://themes.getbootstrap.com/product/incline-landing-page-set/",
+	"text": "Purchase now"
+	}
+	})
 
-    <!-- HERO
+	<!-- HERO
     ================================================== -->
-    <section class="section section-top section-full">
+	<section class="section section-top section-full" id="home" data-parallax="scroll" data-image-src="assets/img/001.jpg">
 
-      <!-- Cover -->
-      <div class="bg-cover" style="background-image: url(assets/img/42.jpg);"></div>
+		<!-- Overlay -->
+		<div class="bg-overlay"></div>
 
-      <!-- Overlay -->
-      <div class="bg-overlay"></div>
+		<!-- Triangles -->
+		<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+		<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
 
-      <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+		<!-- Content -->
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-8 col-lg-7">
 
-      <!-- Content -->
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-8 col-lg-7">
+					<!-- Preheading -->
+					<!-- <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
+            by Simpleqode
+          </p> -->
 
-            <!-- Preheading -->
-            <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
-              by Simpleqode
-            </p>
-            
-            <!-- Heading -->
-            <h1 class="text-white text-center mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-              Landing pages for any occasion
-            </h1>
+					<!-- Heading -->
+					<h1 class="text-white text-center mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
+						Berry Ecke Associates
+					</h1>
 
-            <!-- Subheading -->
-            <p class="lead text-white text-muted text-center mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
-              Incline is set of landing and support pages aimed at helping companies promote new products and business launches.
-            </p>
+					<!-- Subheading -->
+					<p class="lead text-white text-muted text-center mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
+						Berry Ecke Associates is a here is where you would tell me what your elevator speech is so I could put it in.
+					</p>
 
-            <!-- Button -->
-            <p class="text-center mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="https://themes.getbootstrap.com/product/incline-landing-page-set/" target="_blank" class="btn btn-outline-primary text-white">
-                Purchase now
-              </a>
-            </p>
+					<!-- Button -->
+					<p class="text-center mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
+						<a href="#about" class="btn btn-outline-primary text-white">
+							Get to know us
+						</a>
+					</p>
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
 
-    </section>
+	</section>
 
-    <!-- SECTIONS
+
+	<!-- ABOUT
     ================================================== -->
-    @@include("partials/pages/welcome.html")
+	<section class="section section-full" id="about">
 
-    <!-- FOOTER
+		<!-- Content -->
+		<div class="container">
+
+
+			<div class="row align-items-center">
+				<div class="col-md-6 col-lg-7 offset-lg-1 order-md-2">
+
+					<!-- Image -->
+					<div class="img-effect img-effect-border mb-5 mb-md-0">
+						<img src="assets/img/0011.jpg" class="img-fluid" alt="...">
+					</div>
+
+				</div>
+				<div class="col-md-6 col-lg-4 order-md-0">
+
+					<!-- Heading -->
+					<h2 class="heading mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="enter">
+						What we do
+					</h2>
+
+					<!-- Content -->
+					<p class="text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="enter">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem harum debitis aut alias dicta. Laudantium reprehenderit ea, suscipit nulla deleniti excepturi repudiandae!
+					</p>
+
+
+				</div>
+			</div> <!-- / .row -->
+
+
+			<div class="row align-items-center">
+				<div class="col-md-6 col-lg-5 offset-lg-1">
+
+					<!-- Image -->
+					<div class="img-effect img-effect-solid mb-5 mb-md-0">
+						<img src="assets/img/47.jpg" class="img-fluid" alt="...">
+					</div>
+
+				</div>
+				<div class="col-md-6 col-lg-4 offset-lg-1">
+
+					<!-- Heading -->
+					<h2 class="mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="enter">
+						What sets us apart
+					</h2>
+
+					<!-- Content -->
+					<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="enter">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem harum debitis aut alias dicta. Laudantium reprehenderit ea, suscipit nulla deleniti excepturi repudiandae!
+					</p>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+
+	</section>
+
+
+	<!-- Blockquote
     ================================================== -->
-    @@include("partials/footer.html")
+	<section class="section" id="quote">
+		
+		<div class="bg-cover" data-parallax="scroll" data-image-src="assets/img/11.jpg" ></div>
+		<div class="bg-overlay"></div>
+		<!-- Pattern -->
+		<!-- <div class="bg-triangle bg-triangle-light bg-triangle-top bg-triangle-left"></div>
+		<div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div> -->
 
-    <!-- JAVASCRIPT
+		<!-- Content -->
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-md-9">
+
+					<!-- Quote -->
+					<div class="quote">
+						<blockquote class="quote-blockquote">
+							<p class="quote-blockquote-content text-white">
+								The secret to success is not to be a Rolex, but a Timex instead. Blah blah i need this done by yesterday&mdash;11<sup>th</sup> hour and all...
+							</p>
+							<footer class="quote-blockquote-footer text-white text-muted">
+								<span class="text-primary">
+									Confucious R. Ecke
+								</span>
+							</footer>
+						</blockquote>
+					</div> <!-- / .quote -->
+
+				</div>
+			</div> <!-- / .row -->
+
+		</div> <!-- / .container -->
+
+	</section>
+	<!-- SERVICES
+      ================================================== -->
+	<section class="section bg-light" id="services">
+
+		<!-- Triangles -->
+		<div class="bg-triangle bg-triangle-dark bg-triangle-left bg-triangle-top"></div>
+		<div class="bg-triangle bg-triangle-dark bg-triangle-right bg-triangle-bottom"></div>
+
+		<!-- Content -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6">
+
+					<!-- Heading -->
+					<h2 class="text-center mb-4">
+						Featured Services
+					</h2>
+
+					<!-- Subheading -->
+					<p class="text-center text-muted text-left mb-5">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
+					</p>
+
+				</div>
+			</div> <!-- / .row -->
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<!-- Item -->
+					<div class="text-center mb-5">
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="enter">
+							<span class="icon icon-businessman icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="enter">
+							Translation services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+					<!-- Item -->
+					<div class="text-center mb-5">
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="enter">
+							<span class="icon icon-comment icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="enter">
+							Interpretation services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- Item -->
+					<div class="text-center mb-5">
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="enter">
+							<span class="icon icon-edit icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="enter">
+							Proofreading services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="5" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+
+				</div>
+
+			</div> <!-- / .row -->
+
+			<div class="row">
+
+				<div class="col-md-4">
+
+					<!-- Item -->
+					<div class="text-center mb-5 mb-md-0">
+
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="enter">
+							<span class="icon icon-at icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="5" data-animation-trigger="enter">
+							Copywriting services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="6" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+
+					<!-- Item -->
+					<div class="text-center mb-5 mb-md-0">
+
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="5" data-animation-trigger="enter">
+							<span class="icon icon-marker icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="6" data-animation-trigger="enter">
+							Localization services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="7" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+
+					<!-- Item -->
+					<div class="text-center">
+
+						<!-- Icon -->
+						<div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="6" data-animation-trigger="enter">
+							<span class="icon icon-support icon-2x"></span>
+						</div>
+
+						<!-- Heading -->
+						<h4 class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="7" data-animation-trigger="enter">
+							Voiceover services
+						</h4>
+
+						<!-- Content -->
+						<p class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="8" data-animation-trigger="enter">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
+						</p>
+
+					</div>
+
+				</div>
+
+			</div> <!-- / .row -->
+
+
+		</div> <!-- / .container -->
+
+	</section>
+
+	<section class="section section-full" id="contact">
+
+		<!-- Cover -->
+		<div class="bg-cover" data-parallax="scroll" data-image-src="assets/img/0015.jpg" ></div>
+		<div class="bg-overlay"></div>
+
+		<!-- Content -->
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-10 col-lg-8">
+
+					<!-- Promo -->
+					<div class="bg-white text-center shadow py-5 px-4 p-md-6">
+
+						<!-- Icon -->
+						<div class="mb-4">
+							<span class="icon icon-envelope icon-2x"></span>
+						</div>
+
+						<h2 class="mb-2">Get in touch</h2>
+						<p class="text-muted mb-5">Have questions? Send us a message.</p>
+
+						<div class="text-left">
+							<form>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<!-- Name -->
+										<label>Name</label>
+										<div class="input-group">
+											<input type="text" class="form-control order-1" name="contact-name">
+											<div class="input-group-append order-0">
+												<div class="input-group-text">
+													<svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path transform="translate(3 3)" d="
+											  M0 100 A 50 50 0 0 1 50 60 A 20 20 0 0 1 50 0 A 20 20 0 0 1 50 60 A 50 50 0 0 1 100 100">
+														</path>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="form-group col-md-6">
+
+										<!-- Email -->
+										<label>Email</label>
+										<div class="input-group">
+											<input type="email" class="form-control order-1" name="contact-email">
+											<div class="input-group-append order-0">
+												<div class="input-group-text">
+													<svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path transform="translate(3 3)" d="
+											  M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
+														</path>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div> <!-- / .form-row -->
+								<div class="form-row">
+									<div class="form-group col-12">
+
+										<!-- Message -->
+										<label>Message</label>
+										<textarea class="form-control" name="contact-message" rows="3"></textarea>
+
+									</div>
+								</div> <!-- / .form-row -->
+								<div class="form-row mt-3">
+									<div class="col-12 text-center">
+										<button type="submit" class="btn btn-primary btn-sm">Send</button>
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+
+	</section>
+
+
+
+
+
+
+	<!-- FOOTER
     ================================================== -->
-    @@include("partials/scripts.html")
+	@@include("partials/footer.html")
 
-  </body>
+	<!-- JAVASCRIPT
+    ================================================== -->
+	@@include("partials/scripts.html")
+
+</body>
+
 </html>
