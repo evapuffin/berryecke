@@ -32,10 +32,10 @@ const paths = {
   },
   dist:   {
     base:   {
-      dir:    'dist'
+      dir:    'docs'
     },
     libs:   {
-      dir:    'dist/assets/libs'
+      dir:    'docs/assets/libs'
     }
   },
   src:    {
